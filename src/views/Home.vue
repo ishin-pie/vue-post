@@ -21,7 +21,7 @@ export default {
         publishDate: 'June 25, 2020',
         author: 'Art',
         description: 'The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind',
-        thumbnail: 'https://cdn.vuetifyjs.com/images/cards/cooking.png'
+        thumbnail: 'https://assets.website-files.com/5e4b1a54e48aed65701ff226/5e4b1a54e48aed3f261ff24a_photo-1441512673622-3eaa1c39ba28.jpg'
       }
     }
   }

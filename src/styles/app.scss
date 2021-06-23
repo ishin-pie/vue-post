@@ -1,0 +1,8 @@
+@import "variables";
+
+.post-item {
+    .v-card__title {
+      word-break: normal !important;
+      line-height: $line-height-title;
+    }
+}
