@@ -1,3 +1,4 @@
 export default {
-  title: 'Vue Post'
+  title: 'Vue Post',
+  read_more: 'Read more...'
 }
