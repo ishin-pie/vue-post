@@ -1,5 +1,30 @@
 @import "variables";
 
+.app-nav-bar {
+  .app-menu {
+    text-decoration: none;
+    color: $color-nav-item;
+
+    &:hover {
+      color: $color-nav-item-active;
+    }
+
+    &.router-link-active {
+      color: $color-nav-item-active;
+    }
+  }
+  .v-toolbar__content{
+    max-width: 1024px;
+    margin: 0 auto;
+
+    .v-app-bar-title {
+      font-family: $font-brand;
+      font-size: $font-brand-size;
+      color: $font-brand-color;
+    }
+  }
+}
+
 .post-item {
     .v-card__title {
       word-break: normal !important;

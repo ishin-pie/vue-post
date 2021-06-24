@@ -1,4 +1,11 @@
 export default {
   title: 'Vue Post',
-  read_more: 'Read more...'
+  menu: {
+    home: 'Home',
+    about: 'About',
+    contact: 'Contact'
+  },
+  post: {
+    read_more: 'Read more...'
+  }
 }

@@ -16,7 +16,7 @@
           <div class="text-justify grey--text text--darken-2">
             {{ item.description }}
             <span>
-              <router-link to="/about">{{ $t('app.read_more') }}</router-link>
+              <router-link to="/about">{{ $t('app.post.read_more') }}</router-link>
             </span>
           </div>
         </v-card-text>
