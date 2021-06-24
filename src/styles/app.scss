@@ -1,5 +1,10 @@
 @import "variables";
 
+.vue-post {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
 .app-nav-bar {
   .app-menu {
     text-decoration: none;
@@ -22,6 +27,13 @@
       font-size: $font-brand-size;
       color: $font-brand-color;
     }
+  }
+}
+
+.user-profile-card {
+  font-size: 14px;
+  .build-with {
+    font-size: 10px;
   }
 }
 

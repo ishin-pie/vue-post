@@ -6,6 +6,10 @@ export default {
     contact: 'Contact'
   },
   post: {
-    read_more: 'Read more...'
+    read_more: 'Read more...',
+    feature_post: 'Feature Posts:'
+  },
+  info: {
+    build_with: 'Build With Vue'
   }
 }

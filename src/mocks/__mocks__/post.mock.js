@@ -8,6 +8,7 @@ const PostSchema = () => {
     description: faker.lorem.sentence(30),
     contents: faker.lorem.paragraphs(3),
     thumbnail: faker.image.image(),
+    featured: true,
     publishDate: faker.date.past().toLocaleDateString('en-US', {
       day: 'numeric',
       month: 'long',
@@ -28,10 +29,19 @@ export default {
   routes (server) {
     server.get('/api/v1/posts', (schema, request) => {
       const collection = schema.posts.all()
-      const post = collection.models
+      const post = collection.models.map(p => p.attrs)
 
       return {
         data: post
+      }
+    })
+
+    server.get('/api/v1/posts/feature', (schema, request) => {
+      const collection = schema.posts.where({ featured: true })
+      const post = collection.models.map(p => p.attrs)
+
+      return {
+        data: post.slice(0, 2)
       }
     })
   }

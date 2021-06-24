@@ -1,20 +1,20 @@
 <template>
   <v-app>
     <v-main>
-      <app-nav-bar/>
-      <div class="vue-post py-4">
-        <router-view/>
-      </div>
+      <app-layout>
+        <router-view />
+      </app-layout>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import AppNavBar from './components/AppNavBar'
+import AppLayout from './components/AppLayout'
+
 export default {
   name: 'App',
   components: {
-    AppNavBar
+    AppLayout
   },
   data: () => ({
     //

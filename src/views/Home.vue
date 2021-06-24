@@ -8,7 +8,7 @@
 
 <script>
 import PostItem from '@/components/PostItem'
-import { axios } from '../core'
+import PostService from '@/services/post.service'
 
 export default {
   name: 'Home',
@@ -21,7 +21,10 @@ export default {
     }
   },
   async created () {
-    const { data } = await axios.get('/api/v1/posts')
+    const data = await PostService.getPosts()
+    if (data.error) {
+      console.log(data.error)
+    }
     this.items = data.data
   }
 }
