@@ -4,7 +4,9 @@ import router from './router'
 import store from './store'
 import vuetify from './plugins/vuetify'
 import i18n from './i18n'
+import GeneralPlugin from './plugins/GeneralPlugin'
 
+Vue.use(GeneralPlugin)
 Vue.config.productionTip = false
 
 new Vue({

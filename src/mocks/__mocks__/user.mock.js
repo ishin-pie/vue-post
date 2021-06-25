@@ -7,9 +7,9 @@ const UserSchema = () => {
     summary: faker.lorem.sentence(20),
     photo: 'https://avatars.githubusercontent.com/u/63244532',
     social: {
-      github: 'test',
-      facebook: 'test',
-      linkedin: 'test'
+      facebook: 'https://www.facebook.com/ishin1995',
+      github: 'https://github.com/ishin-pie',
+      linkedin: 'https://www.linkedin.com/in/ishin-vin/'
     }
   }
 }

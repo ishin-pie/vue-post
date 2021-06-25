@@ -33,10 +33,22 @@
 
       <v-divider style="width:120px"></v-divider>
 
+      <v-row no-gutters class="ml-n2">
+        <pie-social-link
+          large
+          v-for="(item, key) in user.social"
+          :key="key"
+          :link="item"
+          :icon="`mdi-${key}`"
+        />
+      </v-row>
       <v-row no-gutters>
-        <v-col>
-          <div class="build-with grey--text text--darken-1">{{ $t('app.info.build_with') }}</div>
-        </v-col>
+        <a class="build-with grey--text text--darken-1 mt-2"
+          href="https://vuejs.org"
+          target="_blank"
+        >
+          {{ $t('app.info.build_with') | uppercase }}
+        </a>
       </v-row>
 
     </v-container>

@@ -33,11 +33,6 @@ export default {
       type: Object,
       required: true
     }
-  },
-  filters: {
-    uppercase: function (v) {
-      return v.toUpperCase()
-    }
   }
 }
 </script>
