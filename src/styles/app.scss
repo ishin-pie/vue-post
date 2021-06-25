@@ -53,3 +53,9 @@
 .text-decoration-none {
   text-decoration: none;
 }
+
+.link-hover {
+  &:hover {
+    color: $color-nav-item-active !important;
+  }
+}

@@ -3,6 +3,11 @@
     <v-row v-for="item in items" :key="item.id" class="ma-4">
       <post-item :item="item" class="mx-auto" />
     </v-row>
+    <v-row class="ma-4 mb-16 justify-center justify-md-start">
+        <router-link to="/post" class="text-decoration-none">
+          <v-btn>{{ $t('app.post.all_post') }}</v-btn>
+        </router-link>
+    </v-row>
   </div>
 </template>
 
@@ -11,7 +16,6 @@ import PostItem from '@/components/PostItem'
 import PostService from '@/services/post.service'
 
 export default {
-  name: 'Home',
   components: {
     PostItem
   },

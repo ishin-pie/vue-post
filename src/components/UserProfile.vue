@@ -23,14 +23,12 @@
           <div class="text-subtitle-1 grey--text text--darken-4 my-3">{{ $t('app.post.feature_post') }}</div>
         </v-col>
         <v-col>
-          <p v-for="featurePost in featurePosts" :key="featurePost.id">
-            <router-link
-              :to="{ name: 'PostDetail', params: { postId: featurePost.id }}"
-              class="text-decoration-none grey--text"
-            >
-              {{ featurePost.title }}
-            </router-link>
-          </p>
+          <router-link v-for="featurePost in featurePosts" :key="featurePost.id"
+            :to="{ name: 'PostDetail', params: { postId: featurePost.id }}"
+            class="text-decoration-none grey--text link-hover"
+          >
+            <p>{{ featurePost.title }}</p>
+          </router-link>
         </v-col>
       </v-row>
 
