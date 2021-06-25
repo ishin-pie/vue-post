@@ -12,12 +12,14 @@
       <v-col>
         <v-card-title>{{ item.title }}</v-card-title>
         <v-card-text>
-          <div class="mb-2 text-subtitle-3 grey--text text--darken-1">{{ item.publishDate | uppercase }} | {{ item.author | uppercase }}</div>
-          <div class="text-justify grey--text text--darken-2">
+          <div class="mt-n2 text-subtitle-5 grey--text text--darken-1 font-size-10">
+            {{ item.publishDate | uppercase }} | {{ item.author | uppercase }}
+          </div>
+          <div class="text-justify grey--text">
             {{ item.description }}
-            <span>
-              <router-link to="/about">{{ $t('app.post.read_more') }}</router-link>
-            </span>
+            <a>
+              <router-link to="/about" class="grey--text">{{ $t('app.post.read_more') }}</router-link>
+            </a>
           </div>
         </v-card-text>
       </v-col>

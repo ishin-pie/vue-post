@@ -24,7 +24,10 @@
         </v-col>
         <v-col>
           <p v-for="featurePost in featurePosts" :key="featurePost.id">
-            <router-link :to="{ name: 'PostDetail', params: { postId: featurePost.id }}">
+            <router-link
+              :to="{ name: 'PostDetail', params: { postId: featurePost.id }}"
+              class="text-decoration-none grey--text"
+            >
               {{ featurePost.title }}
             </router-link>
           </p>
@@ -43,7 +46,7 @@
         />
       </v-row>
       <v-row no-gutters>
-        <a class="build-with grey--text text--darken-1 mt-2"
+        <a class="text-decoration-none font-size-10 grey--text text--darken-1 mt-2"
           href="https://vuejs.org"
           target="_blank"
         >

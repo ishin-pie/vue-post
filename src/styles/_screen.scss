@@ -1,0 +1,9 @@
+@import "~vuetify/src/styles/settings/_variables";
+
+@media #{map-get($display-breakpoints, 'sm-and-down')} {
+  .app-layout {
+    .app-layout-row {
+      flex-direction: column-reverse;
+    }
+  }
+}

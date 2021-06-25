@@ -1,12 +1,12 @@
 <template>
   <div>
     <app-nav-bar />
-    <v-container class="vue-post py-4">
-      <v-row>
+    <v-container class="app-layout py-4">
+      <v-row class="app-layout-row">
         <v-col cols="12" md="3">
           <user-profile />
         </v-col>
-        <v-col>
+        <v-col cols="12" md="9">
           <slot></slot>
         </v-col>
       </v-row>
@@ -26,6 +26,3 @@ export default {
   }
 }
 </script>
-
-<style>
-</style>
